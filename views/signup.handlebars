@@ -1,0 +1,53 @@
+      <header class="logo">
+        <center>
+          <a href="/">Blog</a>
+        </center>
+      </header>
+      <nav class="header">
+        <!-- Home -->
+        <a href="/">home</a>
+        <span class="mui--text-dark-hint">|</span>
+		
+        <!-- Dashboard -->
+        <a href="/dashboard">dashboard</a>
+        <span class="mui--text-dark-hint">|</span>
+
+        <!-- Conditionally render login or logout links -->
+        {{#if logged_in}}
+          <a href="" id="logout">logout</a>
+        {{else}}
+          <a href="/login">login</a>
+        {{/if}}
+			
+		<span class="mui--text-dark-hint">|</span>
+		<a href="/admin">admin</a>
+        
+
+      </nav>
+
+
+
+
+
+<div class="">
+  <div class="">
+    <h2>sign up</h2>
+
+    <form class="form signup-form">
+      <div class="form-group">
+        <label for="username-signup">username:</label>
+        <input class="form-input" type="text" id="username-signup" />
+      </div>
+      <div class="form-group">
+        <label for="password-signup">password:</label>
+        <input class="form-input" type="password" id="password-signup" />
+      </div>
+      <div class="form-group">
+        <button class="" type="submit">sign up</button>
+        <a href="/login">log in</a>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="./js/signup.js"></script>

@@ -1,0 +1,32 @@
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="https://cdn.muicss.com/mui-0.10.3/js/mui.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+  </head>
+
+  <body>
+  
+    <div class="center-all">
+      <main class="bodycss">
+        <!-- Render the sub layout style="display: none" -->
+			<div>{{{body}}}</div>
+      </main>
+    </div>
+
+    <!-- Render script for logged in users only -->
+    {{#if logged_in}}
+      <script src="/js/logout.js"></script>
+    {{/if}}
+  </body>
+
+  <script src="/js/toast.js"></script>
+
+</html>

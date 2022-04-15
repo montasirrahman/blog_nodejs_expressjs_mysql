@@ -1,0 +1,59 @@
+      <header class="logo">
+        <center>
+          <a href="/">Blog</a>
+        </center>
+      </header>
+      <nav class="header">
+        <!-- Home -->
+        <a href="/">home</a>
+        <span class="mui--text-dark-hint">|</span>
+		
+        <!-- Dashboard -->
+        <a href="/dashboard">dashboard</a>
+        <span class="mui--text-dark-hint">|</span>
+
+        <!-- Conditionally render login or logout links -->
+        {{#if logged_in}}
+          <a href="" id="logout">logout</a>
+        {{else}}
+          <a href="/login">login</a>
+        {{/if}}
+		
+		<span class="mui--text-dark-hint">|</span>
+		<a href="/admin">admin</a>
+        
+
+      </nav>
+
+
+
+<h1>{{article.title}}</h1>
+<h6>{{article.user.username}} * {{format_date article.createdAt}}</h6>
+<div class="mui-divider"></div>
+<p>{{article.content}}</p>
+<div class="mui-divider"></div>
+<div class="flex-row justify-space-between">
+  {{!-- <button class="mui-btn">👏 {{article.cheers}}</button> --}}
+  {{!-- <button class="mui-btn">💬 {{article.comments.length}}</button> --}}
+</div>
+
+{{#if logged_in}}
+<form id="comment-form">
+  <input type="hidden" id="article_id" value="{{article.id}}">
+  <div class="mui-textfield">
+    <textarea type="text" id="comment" placeholder="Comment"></textarea>
+  </div>
+  <button class="mui-btn mui-btn--raised">Post</button>
+</form>
+{{else}}
+<a href="/login">Log in to comment.</a>
+{{/if}}
+
+<div class="mui-divider"></div>
+{{#each article.comments as |comment|}}
+    {{>comment}}
+{{/each}}
+
+{{#if logged_in}}
+<script src="/js/comment.js"></script>
+{{/if}}

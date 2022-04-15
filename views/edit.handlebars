@@ -1,0 +1,54 @@
+      <header class="logo">
+        <center>
+          <a href="/">Blog</a>
+        </center>
+      </header>
+      <nav class="header">
+        <!-- Home -->
+        <a href="/">home</a>
+        <span class="mui--text-dark-hint">|</span>
+		
+        <!-- Dashboard -->
+        <a href="/dashboard">dashboard</a>
+        <span class="mui--text-dark-hint">|</span>
+
+        <!-- Conditionally render login or logout links -->
+        {{#if logged_in}}
+          <a href="" id="logout">logout</a>
+        {{else}}
+          <a href="/login">login</a>
+        {{/if}}
+			
+		<span class="mui--text-dark-hint">|</span>
+		<a href="/admin">admin</a>
+        
+
+      </nav>
+
+
+
+
+<form class="form edit-form">
+  <label for="title">Title</label><br>
+  <input type="text" id="title" name="title" value="{{article.title}}" /><br>
+  <label for="content">Content</label><br>
+  <textarea
+    name="content"
+    id="content"
+    cols="30"
+    rows="10"
+  >{{article.content}}</textarea><br><br>
+  <div class="">
+    <button
+      class=""
+      type="submit"
+    >Update</button>
+    <button
+      id="delete-button"
+      class=""
+      type="button"
+    >Delete</button>
+  </div>
+</form>
+
+<script src="/js/edit.js"></script>

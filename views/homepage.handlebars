@@ -1,0 +1,37 @@
+      <header class="logo">
+        <center>
+          <a href="/">Blog</a>
+        </center>
+      </header>
+      <nav class="header">
+        <!-- Home -->
+        <a href="/">home</a>
+        <span class="mui--text-dark-hint">|</span>
+		
+        <!-- Dashboard -->
+        <a href="/dashboard">dashboard</a>
+        <span class="mui--text-dark-hint">|</span>
+
+        <!-- Conditionally render login or logout links -->
+        {{#if logged_in}}
+          <a href="" id="logout">logout</a>
+        {{else}}
+          <a href="/login">login</a>
+        {{/if}}
+			
+		<span class="mui--text-dark-hint">|</span>
+		<a href="/admin">admin</a>
+        
+
+      </nav>
+
+
+
+
+{{#each articles as |article|}}
+  <div>
+    <h3><a href="/article/{{article.id}}">{{article.title}}</a></h3>
+    <p class="small_text">{{article.user.username}} * {{format_date article.createdAt}}</p>
+    <div class=""></div>
+  </div>
+{{/each}}

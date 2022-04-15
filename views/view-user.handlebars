@@ -1,0 +1,26 @@
+<a class="nav-link active" aria-current="page" href="/">Home</a>
+<a class="nav-link active" aria-current="page" href="/admin/">admin</a>
+
+<form class="d-flex" method="POST" action="/admin/" novalidate>
+    <input class="form-control me-2" type="search" placeholder="Search by id or title" name="search" aria-label="Search">
+    <button class="btn btn-outline-light" type="submit">Search</button>
+</form>
+
+
+ <big>View article</big> <br>
+
+  {{#each rows}}
+  
+  <b>article id : </b>{{this.id}} <br>
+  
+  <b>user_id : </b>{{this.user_id}} <br>
+  
+  <b>title : </b>{{this.title}} <br>
+  
+  <b>content : </b>{{this.content}} <br>
+  
+  <b>created_at : </b>{{this.created_at}} <br>
+  
+  <b>updated_at : </b>{{this.updated_at}} <br>
+  
+  {{/each}}
