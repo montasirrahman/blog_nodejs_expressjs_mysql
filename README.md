@@ -1,4 +1,6 @@
 ## Blog using nodejs expressjs mysql
+- admin panel to control all published article
+- user login, signup, comment on article, publish article
 
 ### How to use
 
