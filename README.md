@@ -2,7 +2,7 @@
 - admin panel to control all published article
 - user login, signup, comment on article, publish article
 
-## USE YOUR OWN CSS
+### USE YOUR OWN CSS
 
 ### How to use
 
