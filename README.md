@@ -1,6 +1,8 @@
 ## Blog using nodejs expressjs mysql
 
+### How to use
 
+https://user-images.githubusercontent.com/39762711/163519052-f6371c8b-7834-4d82-a395-14feb8adf44f.mp4
 
 
 ### Install 
@@ -19,6 +21,9 @@ ncu
 ncu -u
 npm i
 ````
+
+
+
 
 ### run server
 
