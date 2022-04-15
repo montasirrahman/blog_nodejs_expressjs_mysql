@@ -1,4 +1,4 @@
-# blog_nodejs_expressjs_MySQL
+# Blog using nodejs expressjs mysql
 
 
 
@@ -7,8 +7,22 @@
 - nodejs
 - xampp
 
-## run code
+## install modules
 
 ````
 npm i
 ````
+## update modules
+
+````
+ncu
+ncu -u
+npm i
+````
+
+## run server
+
+````
+nodemon start
+````
+###Visit ``localhost:3002``
