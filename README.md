@@ -9,9 +9,9 @@
 
 ## install modules
 
-````
+``
 npm i
-````
+``
 ## update modules
 
 ````
@@ -22,7 +22,8 @@ npm i
 
 ## run server
 
-````
+``
 nodemon start
-````
-###Visit ``localhost:3002``
+``
+##Visit 
+``localhost:3002``
