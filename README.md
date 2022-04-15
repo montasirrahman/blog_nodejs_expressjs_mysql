@@ -3,16 +3,16 @@
 
 
 
-## Install 
+### Install 
 - nodejs
 - xampp
 
-## install modules
+### install modules
 
 ``
 npm i
 ``
-## update modules
+### update modules
 
 ````
 ncu
@@ -20,11 +20,13 @@ ncu -u
 npm i
 ````
 
-## run server
+### run server
 
 ``
 nodemon start
 ``
+
+### import ``admin-info.sql`` into database for admin login info
 
 ### Visit 
 
