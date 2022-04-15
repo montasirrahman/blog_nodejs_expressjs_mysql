@@ -26,7 +26,11 @@ npm i
 nodemon start
 ``
 
-### import `````admin-info.sql````` into database for admin login info
+### import into database for admin login info
+
+``
+admin-info.sql
+``
 
 ### Visit 
 
